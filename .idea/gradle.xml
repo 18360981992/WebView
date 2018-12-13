@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/aidl练习demo" />
+            <option value="$PROJECT_DIR$/android与js的深度交互demo" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/协调式布局demo" />
+            <option value="$PROJECT_DIR$/悬浮动画demo" />
+            <option value="$PROJECT_DIR$/文件上传先加密参数demo" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

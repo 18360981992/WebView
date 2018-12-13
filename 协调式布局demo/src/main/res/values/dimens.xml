@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="app_bar_height">600px</dimen>  <!--些调式的整体高度-->
+    <dimen name="tool_bar_height">180px</dimen>  <!--标题的高度-->
+    <dimen name="tool_bar_height2">90px</dimen>  <!--标题的高度的一半  用于设置缩小后文字所在的位置   -->
+
+    <dimen name="text_size_toolbar">32px</dimen> <!--标题文字的最大值-->
+    <dimen name="text_size_toolbar2">18px</dimen><!--标题文字的最小值-->
+
+    <dimen name="test_size">26px</dimen> <!--标题文字的最大值-->
+    <dimen name="test_size2">14px</dimen><!--标题文字的最小值-->
+
+</resources>

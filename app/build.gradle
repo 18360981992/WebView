@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'walle'
+android {
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('G:/Android Demo/MyApplication11/app/app.jks')
+            storePassword '123456'
+        }
+        debug {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('G:/Android Demo/MyApplication11/app/app.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.dabao.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // 解决65535
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            manifestPlaceholders = [jpush_channel: "android"];
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+    //个性化设置
+    productFlavors {
+        Vivo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Vivo"]
+        }
+        Xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Xiaomi"]
+        }
+        Huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Huawei"]
+        }
+        Meizhu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Meizhu"]
+        }
+        Oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Oppo"]
+        }
+        Qh360 {
+
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Qh360"]
+        }
+        Tengxun {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Tengxun"]
+        }
+        Sanxing {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Sanxing"]
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+//    compile 'com.meituan.android.walle:library:1.1.5'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/janalytics-android-1.2.1.jar')
+    compile files('libs/jcore-android-1.2.5.jar')
+}
+////在当前App的 build.gradle 中添加如下信息
+//walle {
+//    // 指定渠道包的输出路径
+//    apkOutputFolder = new File("${project.buildDir}/outputs/channels");
+//    // 定制渠道包的APK的文件名称
+//    apkFileNameFormat = '${channel}-${versionName}-${versionCode}.apk';
+//
+//    // 渠道配置文件
+//    channelFile = new File("${project.getProjectDir()}/channel.txt")
+//}

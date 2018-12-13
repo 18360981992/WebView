@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication11.iml" filepath="$PROJECT_DIR$/MyApplication11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidl练习demo/aidl练习demo.iml" filepath="$PROJECT_DIR$/aidl练习demo/aidl练习demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android与js的深度交互demo/android与js的深度交互demo.iml" filepath="$PROJECT_DIR$/android与js的深度交互demo/android与js的深度交互demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/协调式布局demo/协调式布局demo.iml" filepath="$PROJECT_DIR$/协调式布局demo/协调式布局demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/悬浮动画demo/悬浮动画demo.iml" filepath="$PROJECT_DIR$/悬浮动画demo/悬浮动画demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/文件上传先加密参数demo/文件上传先加密参数demo.iml" filepath="$PROJECT_DIR$/文件上传先加密参数demo/文件上传先加密参数demo.iml" />
+    </modules>
+  </component>
+</project>
